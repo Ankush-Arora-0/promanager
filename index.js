@@ -12,16 +12,16 @@ const employeeRout = require('./server/routes/employeeRoutes')
 const server = http.createServer(app);
 const io = new Server(server, {
     cors:{
-        origin: ['http://localhost:3000'],
+        origin: ['https://promanager-g0n0.onrender.com'],
         methods: ['GET', 'POST']
     }
 })
 
 const corsOption = {
-    origin: "http://localhost:3000"
+    origin: "https://promanager-g0n0.onrender.com"
 }
 app.use(cors(corsOption))
-
+app.use(express.static('./build'));
 app.use(express.static('./server/public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
