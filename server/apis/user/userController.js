@@ -1,5 +1,5 @@
 const userModel = require('../user/userModel')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { rawListeners } = require('../project/projectModel')
 const SECRET = "29834hdiusefh&%&^%#&^jshd8w94323J*#("

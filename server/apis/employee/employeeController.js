@@ -1,7 +1,7 @@
 // const userModel = require('../user/userModel')
 const user = require('../user/userModel')
 const employee = require('./employeeModel')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const fs = require('fs')
 
 const register = async (req, res) => {
